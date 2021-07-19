@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珠宝配饰</title>
+    <link rel="icon" href="img/首页/徐.jpeg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/show-m.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header-c">
+            <div class="logo"></div>
+            <ul class="nav">
+                <li class="item ">
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="item ">
+                    <a href="dress.html">婚纱礼服</a>
+                </li>
+                <li class="item active">
+                    <a href="show.html">珠宝配饰</a>
+                </li>
+                <li class="item">
+                    <a href="activity.html">最新活动</a>
+                </li>
+                <li class="item">
+                    <a href="about.html">关于我们</a>
+                </li>
+            </ul>
+            <!-- 汉堡导航 -->
+            <div class="hamburger">
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要 -->
+    <div class="main">
+        <div class="main-c">
+            <img class="img1" src="img/珠宝配饰/da1.png">
+            <span class="line"></span>
+            <div class="desc">
+                <div class="desc-l">
+                    <p class="p1">HardWear系列</p>
+                    <p class="p2">对戒，耳饰</p>
+                    <p class="p3">$5389.00</p>
+                    <p class="p4">白色/ M / VK253</p>
+                </div>
+                <p class="p5">18K白金镶圆形明亮式切割钻石;钻石总重5.99克拉；直径 12毫米；舒适设计，易于佩戴。
+                </p>
+                <div class="desc-1">
+                    <a class="but" href="###">
+                        立即预约
+                    </a>
+                </div>
+            </div>
+            <img class="img2" src="img/珠宝配饰/da2.png">
+            <div class="text">
+                Veronica HardWear系列优雅与颠覆精神并存,敏感捕捉到漫步纽约的时尚女性的精髓与能量。璀璨的钻石，更加 凸显这枚戒指的女性魅力。
+            </div>
+            <div class="text2">钻戒：$1999.00 耳饰：$3899.00</div>
+        </div>
+    </div>
+
+    <!-- 轮播图展示 -->
+    <div class="show">
+        <div class="show-c">
+            <a href="">
+                <button class="but2">戒指</button>
+            </a>
+            <a href="">
+                <button class="but2">项链</button>
+            </a>
+            <a href="">
+                <button class="but2">其他</button>
+            </a>
+            <!-- 轮播图 -->
+            <div class="con">
+                <div class="swiper-wrapper list">
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小1.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小2.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小3.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小4.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小5.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小1.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小2.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小3.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小4.png"></div>
+                    <div class="side swiper-slide"><img src="img/珠宝配饰/小5.png"></div>
+                </div>
+                <!-- 点击 -->
+                <div class="arr-l"></div>
+                <div class="arr-r"></div>
+            </div>
+            <div class="more">
+                <a href="dress.html" class="more-c">MORE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-c">
+            <ul class="survice">
+                <li class="is " style="color: #fff;">&copy; 2018 VERONICA</li>
+                <li class="is "><a href="about.html" style="color: #fff;">联系我们</a> </li>
+                <li class="is "><a href="about.html" style="color: #fff;">加入我们</a></li>
+            </ul>
+            <p class="msg1" style="color: #fff;">网站备案号：豫ICP备110121210号</p>
+            <p class="msg2" style="color: #fff;">增值电信业务经营许可证号：豫B2-20100033</p>
+        </div>
+    </div>
+
+    <!-- //回到顶部 -->
+    <div class="to">
+        <div class="tol">
+            <a href="#"></a>
+        </div>
+        <div class="tor">
+            <a href="about.html"></a>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        var mySwiper = new Swiper('.con', {
+            autoplay: true,
+            slidesPerView: 5,
+            spaceBetween: 50,
+        })
+        $('.arr-r').click(function() {
+            mySwiper.slideNext();
+        })
+        $('.arr-l').click(function() {
+            mySwiper.slidePrev();
+        })
+    </script>
+</body>
+
+</html>

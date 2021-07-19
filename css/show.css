@@ -1,0 +1,245 @@
+.main {
+    width: 100%;
+    height: 1250px;
+    margin-top: 100px;
+}
+
+.show-c,
+.main-c {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-c .img1 {
+    width: 708px;
+    height: 473px;
+}
+
+.main-c .line {
+    display: inline-block;
+    width: 2px;
+    height: 70px;
+    background-color: #454545;
+    margin-left: 73px;
+    vertical-align: top;
+}
+
+.main-c .desc {
+    width: 362px;
+    height: 346px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 42px;
+}
+
+.desc .desc-l {
+    width: 215px;
+    height: 92px;
+    text-align: right;
+}
+
+.desc-l .p1 {
+    margin-top: 8px;
+    font-size: 30px;
+    color: #4c4c4c;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.desc-l .p2 {
+    font-size: 16px;
+    line-height: 13px;
+    color: #4c4c4c;
+    margin-top: 15px;
+}
+
+.desc-l .p3 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #c1c1c1;
+    margin-top: 26px;
+}
+
+.desc-l .p4 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #cacaca;
+    margin-top: 5px;
+}
+
+.desc .p5 {
+    width: 361px;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: #cacaca;
+    margin-top: 50px;
+}
+
+.desc-1 {
+    width: 100%;
+    height: 106px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.desc .but {
+    display: inline-block;
+    text-align: center;
+    width: 151px;
+    height: 45px;
+    line-height: 45px;
+    color: #cacaca;
+    font-size: 16px;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+.desc .but:hover {
+    background-color: #B9AB77;
+}
+
+.main-c .img2 {
+    width: 708px;
+    height: 473px;
+    margin-top: 50px;
+}
+
+.main-c .text {
+    margin-top: 50px;
+    width: 700px;
+    height: 38px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.main-c .text2 {
+    margin-top: 50px;
+    width: 120px;
+    height: 38px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.show {
+    width: 100%;
+    height: 472px;
+    background-color: #DDDDDD;
+    position: relative;
+}
+
+.show-c .but2 {
+    width: 40px;
+    height: 33px;
+    font-size: 12px;
+    border: solid 1px #bbbaba;
+    margin-top: 80px;
+    margin-right: 40px;
+    color: #929292;
+    cursor: pointer;
+}
+
+.show-c .but2:hover {
+    color: #0a0a0a;
+    box-shadow: 0 0 0 1px #b9ab77 inset;
+}
+
+.show-c .con {
+    width: 1200px;
+    height: 137px;
+    margin-top: 40px;
+}
+
+.show-c .con .list {
+    height: 100%;
+}
+
+.show-c .con .list .side {
+    width: 200px;
+    height: 100%;
+}
+
+.show-c .con .list .side img {
+    width: 100%;
+    height: 100%;
+}
+
+.arr-l {
+    width: 32px;
+    height: 50px;
+    background: url(../img/首页/arr-l.png) no-repeat center;
+    position: absolute;
+    left: 50%;
+    top: 195px;
+    margin-left: -780px;
+    opacity: .3;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.arr-l:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.arr-r {
+    width: 32px;
+    height: 50px;
+    background: url(../img/首页/arr-r.png) no-repeat center;
+    position: absolute;
+    left: 50%;
+    top: 195px;
+    margin-left: 750px;
+    opacity: .3;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.arr-r:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.more {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.more .more-c {
+    display: block;
+    color: #F9F9F9;
+    width: 148px;
+    font-size: 12px;
+    height: 43px;
+    border: 1px solid #F9F9F9;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.more .more-c:hover {
+    color: #baae81;
+    border: 1px solid #baae81;
+}
+
+.footer {
+    background-color: #4d4d4d;
+}

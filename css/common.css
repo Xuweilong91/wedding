@@ -1,0 +1,315 @@
+/* 头部 */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header-c {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.header-c .logo {
+    float: left;
+    width: 177px;
+    height: 42px;
+    background: url(../img/首页/logo.png) no-repeat center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.nav {
+    float: right;
+    margin-right: 65px;
+}
+
+.nav .item {
+    float: left;
+    font-size: 17px;
+    margin-left: 82px;
+    line-height: 70px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.item a {
+    color: #000;
+}
+
+.nav .item:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.nav .item:hover a {
+    color: #1d1d1d;
+}
+
+.item a::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: #b9ab77;
+    margin-left: 16%;
+    margin-top: -18px;
+    opacity: 0;
+}
+
+.item:hover a::after {
+    opacity: 1;
+}
+
+.item.active a::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: #b9ab77;
+    margin-left: 16%;
+    margin-top: -18px;
+    opacity: 1;
+}
+
+
+/* 脚部 */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.footer-c {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-c .msg1 {
+    margin: 35px 0 13px;
+    font-size: 12px;
+    color: #323232;
+}
+
+.footer-c .msg2 {
+    font-size: 12px;
+    color: #323232;
+}
+
+.survice {
+    float: right;
+    line-height: 100px;
+}
+
+.survice .is {
+    float: left;
+    font-size: 12px;
+    margin-left: 40px;
+    color: #323232;
+}
+
+
+/* 回到顶部 */
+
+.to {
+    width: 52px;
+    height: 104px;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    z-index: 3;
+    margin-left: 700px;
+}
+
+.to a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.to .tol {
+    border: 1px solid #d3d4d66e;
+    width: 52px;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.1) url(../img/首页/顶部.png) no-repeat center;
+}
+
+.to .tor {
+    border: 1px solid #d3d4d66e;
+    width: 52px;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.1) url(../img/首页/phone.png) no-repeat center;
+}
+
+.to .tol:hover {
+    animation: shak .5s ease-in-out;
+    -webkit-animation: shak .5s ease-in-out;
+    border-color: #b9ab77;
+}
+
+.to .tor:hover {
+    animation: shak .5s ease-in-out;
+    -webkit-animation: shak .5s ease-in-out;
+    border-color: #b9ab77;
+}
+
+@keyframes shak {
+    /* 水平抖动，核心代码 */
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(+2px, 0, 0);
+    }
+    30%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(+4px, 0, 0);
+    }
+    50% {
+        transform: translate3d(-4px, 0, 0);
+    }
+}
+
+
+/* 响应式 */
+
+
+/* 头部 */
+
+@media (max-width: 768px) {
+    .header,
+    .header-c {
+        width: 100%;
+    }
+    .header-c .nav {
+        display: none;
+    }
+    .header-c .logo {
+        width: 100px;
+        height: 30px;
+        background: url(../img/首页/logo.png) no-repeat center;
+        background-size: 100px 30px;
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+    .hamburger {
+        float: right;
+        width: 40px;
+        height: 40px;
+        transition: .3s linear;
+        margin-top: 15px;
+        margin-right: -30px;
+    }
+    .hamburger .line {
+        width: 20px;
+        height: 2px;
+        background: #3D3D3D;
+        margin: 5px auto 0;
+    }
+    .hamburger .line:nth-child(1) {
+        margin-top: 13px;
+    }
+    .activ .line {
+        transition: .3s linear;
+    }
+    .activ .line:nth-child(1) {
+        transform: translateY(7px);
+    }
+    .activ .line:nth-child(2) {
+        width: 0;
+    }
+    .activ .line:nth-child(3) {
+        transform: translateY(-7px) rotate(90deg);
+    }
+    .activ {
+        transform: rotate(45deg);
+        transition-delay: .3s;
+    }
+    .close .line {
+        transition: .3s linear;
+    }
+    .nav {
+        height: calc(100vh - 80px)!important;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        display: none;
+    }
+    .nav .item {
+        float: none;
+        margin-left: 0;
+        text-align: center;
+        height: 18%;
+        display: flex;
+    }
+    .nav .item a {
+        width: 100%;
+        height: 100%;
+        font-size: 22px;
+        color: #fff;
+    }
+    /* 脚部 */
+    .footer-c {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-c .survice {
+        float: none;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .footer-c .survice .is {
+        margin-left: 25px;
+    }
+    .footer-c .msg1 {
+        width: 200px;
+        line-height: 15px;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .footer-c .msg2 {
+        width: 270px;
+        line-height: 15px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    /* 回到顶部 */
+    .to {
+        width: 37px;
+        height: 37px;
+        margin-left: 35%;
+        left: 50%;
+    }
+}
